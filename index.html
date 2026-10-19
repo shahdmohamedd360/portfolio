@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شهد محمد عبد الحميد | Portfolio & CV</title>
+    <!-- رابط Bootstrap 5.3 RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- أيقونات FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #2563eb;
+            --light-bg: #f8fafc;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            color: #334155;
+            overflow-x: hidden;
+        }
+        
+        .navbar {
+            background-color: rgba(15, 23, 42, 0.98) !important;
+            backdrop-filter: blur(10px);
+        }
+        @media (max-width: 768px) {
+            .navbar .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .nav-links-container {
+                margin-top: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px !important;
+            }
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+        }
+       
+        .card {
+            border: none;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            position: relative;
+            margin-bottom: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: 50%;
+            transform: translateX(50%);
+            width: 50px;
+            height: 4px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+        .badge-custom {
+            background-color: #eff6ff;
+            color: var(--accent-color);
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 50rem;
+            font-size: 0.85rem;
+        }
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 25px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark py-3 shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand fw-bold fs-5 mb-2 mb-md-0" href="#"><i class="fas fa-laptop-code text-primary me-2"></i>شهد محمد عبد الحميد</a>
+            <div class="nav-links-container d-flex gap-3">
+                <a class="text-light text-decoration-small px-2 py-1" href="#about">نبذة</a>
+                <a class="text-light text-decoration-small px-2 py-1" href="#experience">التعليم والأكاديمية</a>
+                <a class="text-light text-decoration-small px-2 py-1" href="#skills">المهارات</a>
+                <a class="text-light text-decoration-small px-2 py-1" href="#projects">المشاريع</a>
+                <a class="text-light text-decoration-small px-2 py-1" href="#contact">تواصل</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section text-center">
+        <div class="container px-3">
+            <span class="badge bg-primary text-white px-3 py-2 rounded-pill mb-3 fs-6">تخصص نظم المعلومات</span>
+            <h1 class="display-5 fw-bold mb-3">شهد محمد عبد الحميد</h1>
+            <p class="lead text-light opacity-8 mb-4 mx-auto" style="max-width: 600px; font-size: 1rem;">
+                متخصصة في تحليل وتصميم نظم المعلومات، إدارة قواعد البيانات، وتطوير واجهات المستخدم لتلبية احتياجات الأعمال بفاعلية.
+            </p>
+            <div class="d-flex justify-content-center gap-2 flex-wrap">
+                <a href="#projects" class="btn btn-primary px-4 shadow-sm">استعرض أعمالي</a>
+                <a href="#contact" class="btn btn-outline-light px-4">تواصل معي</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 bg-white">
+        <div class="container py-2">
+            <h2 class="text-center section-title fs-3">نبذة تعريفية</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+                    <p class="text-secondary lh-lg fs-6">
+                        طالبة بكلية نظم ومعلومات، من محافظة الغربية (مركز زفتى). أمتلك شغفاً كبيراً بتكنولوجيا المعلومات وتحليل الأنظمة البرمجية، وأسعى دائماً لتطوير مهاراتي التقنية في مجالات قواعد البيانات وتطوير الويب لتقديم حلول برمجية مبتكرة ومفيدة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-5">
+        <div class="container py-2">
+            <h2 class="text-center section-title fs-3">الخلفية الأكاديمية والخبرات</h2>
+            <div class="row g-4 mt-2">
+                <div class="col-lg-6">
+                    <div class="card p-4 h-100 shadow-sm border-start border-primary border-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle text-primary me-3">
+                                <i class="fas fa-graduation-cap fa-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="fw-bold fs-5 mb-1">كلية نظم ومعلومات</h4>
+                                <span class="text-muted small">دراسة الأكاديمية</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0">دراسة متخصصة في أساسيات البرمجة،   وإدارة قواعد البيانات بكفاءة عالية.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card p-4 h-100 shadow-sm border-start border-primary border-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle text-primary me-3">
+                                <i class="fas fa-users fa-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="fw-bold fs-5 mb-1">العمل الجماعي وإدارة المشاريع</h4>
+                                <span class="text-muted small">خبرة عملية</span>
+                            </div>
+                        </div>
+                        <p class="text-secondary small mb-0">القدرة على العمل ضمن فريق برمجى، توزيع المهام، وإنجاز المشاريع الأكاديمية في الأوقات المحددة بدقة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5 bg-white">
+        <div class="container py-2">
+            <h2 class="text-center section-title fs-3">المهارات التقنية</h2>
+            <div class="row g-3 text-center mt-2">
+                <div class="col-md-3 col-6">
+                    <div class="card p-3 h-100 bg-light">
+                        <i class="fas fa-database fa-2x text-primary mb-2"></i>
+                        <h6 class="fw-bold">قواعد البيانات</h6>
+                        <p class="text-muted small mb-0" style="font-size: 0.8rem;">Soft Skills.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card p-3 h-100 bg-light">
+                        <i class="fas fa-code fa-2x text-success mb-2"></i>
+                        <h6 class="fw-bold">تطوير الويب</h6>
+                        <p class="text-muted small mb-0" style="font-size: 0.8rem;">HTML, CSS, & Bootstrap.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card p-3 h-100 bg-light">
+                        <i class="fas fa-chart-line fa-2x text-danger mb-2"></i>
+                        <h6 class="fw-bold">تحليل النظم</h6>
+                        <p class="text-muted small mb-0" style="font-size: 0.8rem;">تحليل المتطلبات و البيانات.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card p-3 h-100 bg-light">
+                        <i class="fas fa-tasks fa-2x text-info mb-2"></i>
+                        <h6 class="fw-bold">إدارة المشاريع</h6>
+                        <p class="text-muted small mb-0" style="font-size: 0.8rem;">التخطيط وتنظيم سير العمل.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5">
+        <div class="container py-2">
+            <h2 class="text-center section-title fs-3">المشاريع وأعمال التخرج</h2>
+            <div class="row justify-content-center mt-2">
+                <div class="col-lg-8">
+                    <div class="card p-4 shadow-sm border-top border-primary border-4">
+                        <h4 class="fw-bold text-dark mb-3 fs-5">نظام إدارة معلومات متكامل</h4>
+                        <p class="text-secondary small lh-lg mb-3">
+                            مشروع برمجي يهدف إلى تسهيل إدخال واسترجاع البيانات بكفاءة عالية، مع تصميم واجهة مستخدم متجاوبة ونظام قواعد بيانات دقيق لتخزين وتنظيم العمليات.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge-custom">HTML & CSS</span>
+                            <span class="badge-custom">Bootstrap</span>
+                            <span class="badge-custom">Database Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-white">
+        <div class="container py-2">
+            <h2 class="text-center section-title fs-3">تواصل معي</h2>
+            <div class="row justify-content-center mt-2">
+                <div class="col-lg-6 text-center">
+                    <p class="text-secondary small mb-4">أرحب بالتواصل للتعاون في المشاريع التقنية والبرمجية.</p>
+                    <div class="d-flex justify-content-center gap-4 mb-4 flex-wrap">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-phone-alt text-primary"></i>
+                            <span class="fw-bold small" dir="ltr">+20 0123456789</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-primary"></i>
+                            <span class="fw-bold small">الغربية، مركز زفتى</span>
+                        </div>
+                    </div>
+                    
+                    <form action="#" method="POST" class="text-start bg-light p-3 p-md-4 rounded-4 shadow-sm">
+                        <div class="mb-3">
+                            <label class="form-label fw-bold small">الاسم الكامل</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="أدخل اسمك" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold small">البريد الإلكتروني</label>
+                            <input type="email" class="form-control form-control-sm" placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold small">الرسالة</label>
+                            <textarea class="form-control form-control-sm" rows="3" placeholder="اكتب رسالتك هنا..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm w-100 py-2 fw-bold shadow-sm">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0 text-light opacity-75 small">جميع الحقوق محفوظة &copy; 2026 - شهد محمد عبد الحميد</p>
+        </div>
+    </footer>
+
+</body>
+</html>
